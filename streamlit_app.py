@@ -48,9 +48,9 @@ except URLError as e:
 # streamlit.text(fruityvice_response.json()) #This  .json actually showed json version of the response as opposed to   showing <response 200>
 
 # write your own comment passed the response to pandas library
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - this shows the response in a  table 
-streamlit.dataframe(fruityvice_normalized)
+#streamlit.dataframe(fruityvice_normalized)
 
 #import snowflake.connector
 streamlit.header("The fruit load list contains:|")
