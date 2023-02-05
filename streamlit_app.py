@@ -36,8 +36,8 @@ try:
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     streamlit.dataframe(fruityvice_normalized)
     #streamlit.write('The user entered ', fruit_choice)
-  
-  except URLError  as e:
+ 
+except URLError as e:
     streamlit.error()
  
 # streamlit.text(fruityvice_response.json()) #This  .json actually showed json version of the response as opposed to   showing <response 200>
